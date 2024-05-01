@@ -3,7 +3,7 @@ import React from "react";
 
 import skyScene from "../assets/3d/sky.glb";
 
-const Sky = () => {
+const Sky = ({ isRotating }) => {
   const sky = useGLTF(skyScene);
   return (
     <mesh>

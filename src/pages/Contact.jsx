@@ -2,6 +2,7 @@ import { Suspense, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import Fox from "../models/Fox";
+import useAlert from "../hooks/useAlert";
 
 import Loader from "../components/Loader";
 
@@ -10,6 +11,8 @@ const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
+
+  const { alert, showAlert, hideAlert } = useAlert();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -35,10 +38,16 @@ const Contact = () => {
       )
       .then(() => {
         setIsLoading(false);
+        showAlert({
+          show: true,
+          text: "Message sent successfully!",
+          type: "success",
+        });
         // TODO: Show success message
         // TODO: Hide an alert
 
         setTimeout(() => {
+          hideAlert();
           setCurrentAnimation("idle");
           setForm({ name: "", email: "", message: "" });
         }, [2000]);
@@ -47,7 +56,11 @@ const Contact = () => {
         setIsLoading(false);
         setCurrentAnimation("idle");
         console.log(error);
-        // TODO: Show error message
+        showAlert({
+          show: true,
+          text: "I didn't receive your message!",
+          type: "success",
+        });
       });
   };
   const handleFocus = () => setCurrentAnimation("walk");

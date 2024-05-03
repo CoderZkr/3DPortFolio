@@ -14,7 +14,7 @@ const Contact = () => {
     setIsLoading(true);
 
     emailjs
-      .sendForm(
+      .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
@@ -30,6 +30,8 @@ const Contact = () => {
         setIsLoading(false);
         // TODO: Show success message
         // TODO: Hide an alert
+
+        setForm({ name: "", email: "", message: "" });
       })
       .catch((error) => {
         setIsLoading(false);

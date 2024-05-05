@@ -179,10 +179,10 @@ export const experiences = [
     iconBg: "#a2d2ff",
     date: "Mars 2023 - Oct 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing web application using React.js and other related technologies.",
+      "Learning to handle with reports visualized with charts.",
+      "Implementing responsive design charts and ensuring cross-browser compatibility.",
+      "Learning with great practise Syncfusion React UI Library, good experience using third party.",
     ],
   },
 ];

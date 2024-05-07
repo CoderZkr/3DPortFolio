@@ -9,15 +9,15 @@ import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
 
 import sakura from "../assets/sakura.mp3";
-import alanWalker from "../assets/alanWalkerHeadlights.mp3";
+/* import alanWalker from "../assets/alanWalkerHeadlights.mp3";
 import butVoice from "../assets/butVoice.mp3";
 import anti from "../assets/anti.mp3";
-
+ */
 import { soundoff, soundon } from "../assets/icons";
 
 const Home = () => {
   /* const audioRef = useRef(new Audio(sakura)); */
-  const audioRef = useRef(new Audio(anti));
+  const audioRef = useRef(new Audio(sakura));
   /* const audioRef = useRef(new Audio(alanWalker));*/
 
   /*const audioRef = useRef(new Audio(butVoice));*/

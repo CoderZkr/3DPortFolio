@@ -43,11 +43,6 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: express,
-    name: "Express",
-    type: "Backend",
-  },
-  {
     imageUrl: git,
     name: "Git",
     type: "Version Control",
@@ -73,11 +68,6 @@ export const skills = [
     type: "Database",
   },
   {
-    imageUrl: motion,
-    name: "Motion",
-    type: "Animation",
-  },
-  {
     imageUrl: mui,
     name: "Material-UI",
     type: "Frontend",
@@ -101,11 +91,6 @@ export const skills = [
     imageUrl: redux,
     name: "Redux",
     type: "State Management",
-  },
-  {
-    imageUrl: sass,
-    name: "Sass",
-    type: "Frontend",
   },
   {
     imageUrl: tailwindcss,

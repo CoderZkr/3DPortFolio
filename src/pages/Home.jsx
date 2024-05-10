@@ -8,19 +8,13 @@ import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
 
-import sakura from "../assets/sakura.mp3";
-/* import alanWalker from "../assets/alanWalkerHeadlights.mp3";
-import butVoice from "../assets/butVoice.mp3";
-import anti from "../assets/anti.mp3";
- */
+import otrok from "../assets/otrok.mp3";
+
 import { soundoff, soundon } from "../assets/icons";
 
 const Home = () => {
-  /* const audioRef = useRef(new Audio(sakura)); */
-  const audioRef = useRef(new Audio(sakura));
-  /* const audioRef = useRef(new Audio(alanWalker));*/
+  const audioRef = useRef(new Audio(otrok));
 
-  /*const audioRef = useRef(new Audio(butVoice));*/
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
   const [currentStage, setCurrentStage] = useState(1);

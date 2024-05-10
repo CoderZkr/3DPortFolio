@@ -194,7 +194,7 @@ export const projects = [
   {
     iconUrl: pricewise,
     theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    name: "Scout Chat",
     description:
       "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
     link: "https://github.com/coderZkr/3DPortFolio/",
@@ -202,7 +202,7 @@ export const projects = [
   {
     iconUrl: threads,
     theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
+    name: "Full Stack Trello Clone",
     description:
       'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
     link: "https://github.com/coderZkr/3DPortFolio/",
@@ -210,9 +210,9 @@ export const projects = [
   {
     iconUrl: car,
     theme: "btn-back-blue",
-    name: "Car Finding App",
+    name: "Scout Chat App",
     description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
+      "Designed and built a mobile app for chatting and hikes notificating on the market, streamlining the car-buying process.",
     link: "https://github.com/coderZkr/3DPortFolio/",
   },
   {
